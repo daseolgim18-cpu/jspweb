@@ -1,8 +1,9 @@
 <%@ page contentType="text/html; charset=utf-8" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="dto.Book" %>
-
+<%@ page import="dao.BookRepository" %>
 <jsp:useBean id="bookDAO" class="dao.BookRepository" scope="session" />
+
 <html>
 <head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -12,7 +13,7 @@
 </head>
 <body>
 <div class="container py-4">
-    <%@ include file="welcome.jsp" %>
+    <%@ include file="menu.jsp" %>
 
     <div class="p-5 mb-4 bg-body-tertiary rounded-3">
         <div class="container-fluid py-5">
@@ -34,12 +35,14 @@
                 <h5><b><%= book.getName() %></b></h5>
                 <p><%= book.getAuthor() %></p>
                 <p>
-                    <%= book.getPublisher() %> | 35<%= book.getUnitPrice() %>원
+                    <%= book.getPublisher() %> | <%= book.getUnitPrice() %>원
                 </p>
                 <p>
                     <%= book.getDescription().substring(0, 60) %>...
                 </p>
                 <p><%= book.getUnitPrice() %>원</p>
+                <p> <a href="./book.jsp?id=<%= book.getBookId() %>"
+                class = "btn btn-secondary" role="button"> 상세 정보 &raquo;</a>
             </div>
         </div>
         <%
