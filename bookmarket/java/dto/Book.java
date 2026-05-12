@@ -1,12 +1,11 @@
 package dto;
 
-import java.io.Serializable;;
+import java.io.Serializable;
 
 public class Book  implements Serializable{
 
     private String bookId;
     private String name;
-    private String Boo;
     private int unitPrice;
     private String author;
     private String description;
@@ -37,12 +36,6 @@ public class Book  implements Serializable{
     }
     public void setName(String name) {
         this.name = name;
-    }
-    public String getBoo() {
-        return Boo;
-    }
-    public void setBoo(String boo) {
-        Boo = boo;
     }
     public int getUnitPrice() {
         return unitPrice;
