@@ -23,6 +23,7 @@
    <div class="row align-items-md-stretch text-center">
         <div class="text-end">
             <a href="?language=ko">Korean</a> | <a href="?language=en">English</a>
+            <a href="logout.jsp" class="btn btn-sm btn-success pull right">logout</a>
         </div>    
         <form name="newBook" action="./processAddBook.jsp" class="form-horizontal" method="post" enctype="multipart/form-data">
 
@@ -71,9 +72,7 @@
             <div class="mb-3 row">
                 <label class="col-sm-2"><fmt:message key="description" /></label>
                 <div class="col-sm-5">
-                    <textarea name="description" id="description" cols="50" rows="2"
-                              class="form-control"
-                              placeholder="100자 이상 적어주세요"></textarea>
+                    <textarea name="description" id="description" cols="50" rows="2" class="form-control" placeholder="100자 이상 적어주세요"></textarea>
                 </div>
             </div>
 
