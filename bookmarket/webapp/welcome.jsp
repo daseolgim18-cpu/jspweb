@@ -20,15 +20,15 @@
 
 <div class="container py-4">
 
-    <!-- Home 아이콘 -->
-    <header class="pb-3 mb-4 border-bottom">
-        <a href="./welcome.jsp"
-           class="d-flex align-items-center text-dark text-decoration-none">
-
+    <header class="pb-3 mb-4 border-bottom d-flex justify-content-between align-items-center">
+        <a href="./welcome.jsp" class="d-flex align-items-center text-dark text-decoration-none">
             <i class="bi bi-house-fill fs-3"></i>
-
             <span class="fs-4 ms-2">Home</span>
         </a>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-dark" type="submit">Search</button>
+        </form>
     </header>
     
     <%! 

@@ -1,7 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <html>
 <head>
-<head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet">
 <title>도서아이디 오류</title>
@@ -16,7 +15,7 @@
         </div>
     </div>
 
-    <div class="row align-items-md-stretch text-center">
+    <div class="row align-items-md-stretch">
         <div class="col-md-12">
             <div class="h-100 p-5">
                 <h3>Please sign in</h3>

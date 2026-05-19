@@ -26,7 +26,7 @@
         BookRepository dao = BookRepository.getInstance();
         ArrayList<Book> listOfBooks = dao.getAllBooks();
     %>
-   <div class="row align-items-md-stretch text-center">
+   <div class="row align-items-md-stretch">
         <%
             for (int i = 0; i < listOfBooks.size(); i++) {
                 Book book = listOfBooks.get(i);
