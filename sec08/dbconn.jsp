@@ -11,7 +11,7 @@
 
         // 계정 정보
         String user = "system";
-        String password = "oracle";
+        String password = "1234";
 
         // 2. JDBC 드라이버 로드
         Class.forName("oracle.jdbc.driver.OracleDriver");
